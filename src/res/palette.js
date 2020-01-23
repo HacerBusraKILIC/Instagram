@@ -13,7 +13,7 @@ const palette = {
         image: { 
             height: height*0.06, 
             width: width*0.06, 
-            resizeMode: 'contain' 
+            resizeMode: 'contain'
         },
         headerLeftContainer: {
             marginLeft: width*0.04, 

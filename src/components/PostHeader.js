@@ -10,7 +10,7 @@ const PostHeader = ({ post }) => {
   return (
     <View style={styles.container}>
       <View style={styles.nameContainer}>
-        <Image source={images.zafer} style={styles.personImage} />
+        <Image source={images.profile} style={styles.personImage} />
         <View>
           <Text style={styles.personName}>{post.username}</Text>
           <Text style={styles.placeName}>{post.placeName}</Text>
@@ -36,12 +36,12 @@ const styles = StyleSheet.create({
   nameContainer: {
     flexDirection: 'row',
     justifyContent: 'flex-start',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   personImage: {
     width: width*0.06,
-    height: height*0.06, //25
-    borderRadius: height*0.04,
+    height: height*0.04, 
+    borderRadius: height*0.02,
   },
   personName: {
     color: colors.text,

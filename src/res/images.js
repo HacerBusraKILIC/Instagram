@@ -38,6 +38,6 @@ const images = {
   video_camera2: require('./images/video_camera2.png'),
   write: require('./images/write.png'),
   write3: require('./images/write3.png'),
-  zafer: require('./images/zafer.jpg')
+  profile: require('./images/profile.jpg')
 }
 export default images

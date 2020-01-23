@@ -5,8 +5,8 @@ import Post from '../../../components/Post'
 
 const HomeScreen = () => {
   const post = {
-    username: 'ozaferayan',
-    placeName: 'İstanbul, Türkiye',
+    username: 'hacerbusrakilic',
+    placeName: 'Kocaeli, Türkiye',
     imgUrl: 'https://picsum.photos/200/300',
     likeCount: 103,
     commentCount: 42,

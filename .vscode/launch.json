@@ -10,6 +10,13 @@
             "type": "reactnative",
             "request": "launch",
             "platform": "android"
+        },
+        {
+            "name": "Debug iOS",
+            "cwd": "${workspaceFolder}",
+            "type": "reactnative",
+            "request": "launch",
+            "platform": "ios"
         }
     ]
 }

@@ -1,8 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Image, Text, TouchableOpacity, } from 'react-native';
-import colors from 'res/colors';
-import images from 'res/images';
-import { width, height } from '../Dimensions'
+import { width, height } from '../../../../Dimensions'
 
 const PostImage = ({ post }) => {
 

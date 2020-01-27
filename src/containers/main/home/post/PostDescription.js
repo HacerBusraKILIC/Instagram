@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, StyleSheet, Text, } from 'react-native';
-import colors from '../res/colors';
+import colors from 'res/colors';
 import ReadMore from 'react-native-read-more-text';
-import { width, height } from '../Dimensions'
+import { width, height } from '../../../../Dimensions'
 
 const PostDescription = ({ post }) => {
 

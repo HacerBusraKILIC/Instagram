@@ -2,8 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, } from 'react-native';
 import colors from 'res/colors';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import prettyTime from '../utils/preetyTime';
-import { width, height } from '../Dimensions'
+import prettyTime from '../../../../utils/preetyTime';
+import { width, height } from '../../../../Dimensions'
 
 const PostPublishDate = ({ post }) => {
 

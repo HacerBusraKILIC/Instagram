@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity } from 'react-native'
-import colors from '../res/colors'
-import { width, height } from '../Dimensions'
+import colors from 'res/colors'
+import { width, height } from '../../../../Dimensions'
 
 const PostLikes = ({ post }) => {
 

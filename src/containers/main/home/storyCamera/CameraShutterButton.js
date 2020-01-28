@@ -1,6 +1,7 @@
-import React from 'react';
-import { View, StyleSheet, } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import React from 'react'
+import { View, StyleSheet, } from 'react-native'
+import { TouchableOpacity } from 'react-native-gesture-handler'
+import { width, height } from '../../../../Dimensions'
 
 const CameraShutterButton = (props) => {
 
@@ -8,6 +9,7 @@ const CameraShutterButton = (props) => {
     <TouchableOpacity style={styles.container} onPress={props.onPress}>
       <View style={styles.outerCircle}>
         <View style={styles.innerCircle}>
+          {console.log(height*0.089 +", "+width*0.147)}
         </View>
       </View>
     </TouchableOpacity>
@@ -19,12 +21,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 50
+    marginBottom: height*0.074
   },
   outerCircle: {
-    width: 75,
-    height: 75,
-    borderRadius: 75,
+    width: width*0.184, 
+    height: height*0.11,
+    borderRadius: height*0.11,
     borderWidth: 5,
     backgroundColor: 'transparent',
     borderColor: 'white',
@@ -32,9 +34,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   innerCircle: {
-    width: 60,
-    height: 60,
-    borderRadius: 60,
+    width: width*0.147,
+    height: height*0.089,
+    borderRadius: height*0.089,
     backgroundColor: 'white',
   },
 

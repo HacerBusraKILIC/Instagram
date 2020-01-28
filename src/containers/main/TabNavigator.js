@@ -1,18 +1,19 @@
-import React from 'react';
-import { Image, View } from 'react-native';
-import { createBottomTabNavigator } from 'react-navigation-tabs';
-import { createStackNavigator } from 'react-navigation-stack';
-import images from '../../res/images';
-import colors from '../../res/colors';
-import palette from '../../res/palette';
-import MainScreen from './MainScreen';
-import OtherScreen from './OtherScreen';
-import HomeNavigator from './home/HomeNavigator';
+import React from 'react'
+import { Image, View } from 'react-native'
+import { createBottomTabNavigator } from 'react-navigation-tabs'
+import { createStackNavigator } from 'react-navigation-stack'
+import images from '../../res/images'
+import colors from '../../res/colors'
+import palette from '../../res/palette'
+import MainScreen from './MainScreen'
+import SearchNavigator from '../../containers/main/search/SearchNavigator'
+import OtherScreen from './OtherScreen'
+import HomeNavigator from './home/HomeNavigator'
 import { width, height } from '../../Dimensions'
 
 const routeConfig = {
   Home: HomeNavigator,
-  Search: createStackNavigator({ Search: OtherScreen }),
+  Search: SearchNavigator,
   AddPost: createStackNavigator({ AddPost: MainScreen }),
   Activity: createStackNavigator({ Activity: OtherScreen }),
   Profile: createStackNavigator({ Profile: MainScreen }),

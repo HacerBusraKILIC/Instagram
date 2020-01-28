@@ -7,10 +7,28 @@ import { width, height } from '../../../../Dimensions'
 
 const PostPublishDate = ({ post }) => {
 
+  const prettyTimeTemplates = {
+    long: {
+      prefix: "",
+      suffix: " önce",
+      seconds: "saniyeler",
+      minute: "1 dakika",
+      minutes: "%d dakika",
+      hour: "1 saat",
+      hours: "%d saat",
+      day: "1 gün",
+      days: "%d gün",
+      month: "1 ay",
+      months: "%d ay",
+      year: "1 yıl",
+      years: "%d yıl"
+    }
+  };
+  
   return (
     <TouchableOpacity style={styles.container} onPress={() => console.log('test')}>
       <Text style={styles.text}>
-        {prettyTime(post.publishedAt)}
+        {prettyTime(prettyTimeTemplates.long, post.publishedAt)}
       </Text>
     </TouchableOpacity>
   )
@@ -18,13 +36,13 @@ const PostPublishDate = ({ post }) => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: height*0.01,
-    paddingStart: height*0.03,
-    paddingEnd: height*0.03,
+    marginTop: height * 0.01,
+    paddingStart: height * 0.03,
+    paddingEnd: height * 0.03,
   },
   text: {
     color: colors.textFaded2,
-    fontSize: height*0.017,
+    fontSize: height * 0.017,
   }
 });
 

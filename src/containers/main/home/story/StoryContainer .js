@@ -22,7 +22,7 @@ const StoryContainer = ({ stories, onStoryPress }) => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingLeft: width*0.05,
+    paddingLeft: width*0.02,
     marginTop: height*0.015,
     paddingBottom: height*0.015
   },

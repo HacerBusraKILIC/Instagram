@@ -1,15 +1,14 @@
 import React from 'react'
 import { Image, View } from 'react-native'
 import { createBottomTabNavigator } from 'react-navigation-tabs'
-import { createStackNavigator } from 'react-navigation-stack'
 import images from 'res/images'
 import colors from 'res/colors'
 import palette from 'res/palette'
-import MainScreen from './MainScreen' 
+import HomeNavigator from './home/HomeNavigator'
 import SearchNavigator from 'containers/main/search/SearchNavigator'
 import AddPostNavigator from 'containers/main/addPost/AddPostNavigator'
 import ActivityNavigator from 'containers/main/activity/ActivityNavigator'
-import HomeNavigator from './home/HomeNavigator'
+import ProfileNavigator from 'containers/main/profile/ProfileNavigator'
 import { width, height } from '../../Dimensions'
 
 const routeConfig = {
@@ -17,7 +16,7 @@ const routeConfig = {
   Search: SearchNavigator,
   AddPost: AddPostNavigator,
   Activity: ActivityNavigator,
-  Profile: createStackNavigator({ Profile: MainScreen }),
+  Profile: ProfileNavigator,
 };
 
 const navigatorConfig = {
@@ -41,7 +40,7 @@ const navigatorConfig = {
       }
       return <View>
         {routeName === 'Profile' ?
-          <Image style={{ height: height*0.035, width: width*0.06, borderRadius: height*0.02 }} source={icon} /> :
+          <Image style={{ height: height * 0.035, width: width * 0.06, borderRadius: height * 0.02 }} source={icon} /> :
           <Image style={{ ...palette.header.image }} source={icon} />
         }</View>
 

@@ -5,3 +5,4 @@ react-native ile geliştirilmiş clone instgram uygulamasıdır
 ![image](https://user-images.githubusercontent.com/26281251/73175915-4aea9a00-411c-11ea-9171-4e128479ed8d.png)
 ![image](https://user-images.githubusercontent.com/26281251/73175975-72416700-411c-11ea-8039-fa7b6a1f43f3.png)
 ![image](https://user-images.githubusercontent.com/26281251/73242940-5c34b480-41b7-11ea-87f9-78407822051d.png)
+![image](https://user-images.githubusercontent.com/26281251/73243826-956e2400-41b9-11ea-90ab-09e1c432d487.png)

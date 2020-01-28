@@ -5,8 +5,9 @@ import { createStackNavigator } from 'react-navigation-stack'
 import images from '../../res/images'
 import colors from '../../res/colors'
 import palette from '../../res/palette'
-import MainScreen from './MainScreen'
+import MainScreen from './MainScreen' 
 import SearchNavigator from '../../containers/main/search/SearchNavigator'
+import AddPostNavigator from '../../containers/main/addPost/AddPostNavigator'
 import OtherScreen from './OtherScreen'
 import HomeNavigator from './home/HomeNavigator'
 import { width, height } from '../../Dimensions'
@@ -14,7 +15,7 @@ import { width, height } from '../../Dimensions'
 const routeConfig = {
   Home: HomeNavigator,
   Search: SearchNavigator,
-  AddPost: createStackNavigator({ AddPost: MainScreen }),
+  AddPost: AddPostNavigator,
   Activity: createStackNavigator({ Activity: OtherScreen }),
   Profile: createStackNavigator({ Profile: MainScreen }),
 };
